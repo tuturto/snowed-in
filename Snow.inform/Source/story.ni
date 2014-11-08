@@ -1,5 +1,7 @@
 "Snow" by "Tuukka Turto"
 
+When play begins, say "It's winter morning and you have just woken up in your cabin. The first snow fell last night and now you need to clean it out from your drive way, before you can even think of leaving the cabin."
+
 Kitchen is a room. "A small kitchen with a hearth, small pantries and a small table. In east you can see living room and vestibule leading outside is south from here."
 
 Living Room is a room. It is east from Kitchen. "A cozy living room with fire place and arm chair in front of it. A bookshelf is against the wall."
