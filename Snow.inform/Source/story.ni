@@ -37,7 +37,7 @@ Carry out blowing it with:
 	now the snow is blowed.
 
 Report blowing it with:
-	say "The blower belches out some black smoke and start hurling snow in a long arc. In no time the yard has been cleaned."
+	say "The blower belches out some black smoke and starts hurling snow in a long arc. In no time the yard has been cleaned."
 
 Every turn:
 	if the snow is blowed:
