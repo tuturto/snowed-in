@@ -39,7 +39,7 @@ Vestibule is a room. It is south from Kitchen. The description is "A small room,
 
 some garments are scenery in the Vestibule. Understand "shoe", "shoes", "jacket", "jackets" as the garments. The description is "As you're dressed up warmly, you aren't interested in extra clothing." 
 
-Wooden door is a door. It is scenery. It is west of Vestibule and east of Front Yard. The description is "Sturdy oaken door has seen many seasons. The paint is worn, but the door itself is still solid and keeps the frost out."
+wooden door is a door. It is scenery. It is west of Vestibule and east of Front Yard. The description is "Sturdy oaken door has seen many seasons. The paint is worn, but the door itself is still solid and keeps the frost out."
 
 Front Yard is a room. The description is "Tiny yard, completely covered in snow. White trees around the yard sparkle in frosty winter weather. To east is door that leads inside the house and a small path leads to south east. Your trusty snow blower stands here."
 
@@ -59,9 +59,9 @@ Instead of tying the spark plug to the red blower:
 		now the spark plug is part of the red blower;
 		say "You screw in the spark plug and attach the wiring."
 
-Defrosting it with is an action applying to two things. Understand "Defrost [something] with [something]" as defrosting it with.
+Defrosting it is an action applying to one thing. Understand "Defrost [something]" as defrosting it.
 
-Check defrosting it with:
+Check defrosting it:
 	if the noun is not the red blower:
 		say "You don't need to defrost it."
 		instead;
@@ -71,11 +71,14 @@ Check defrosting it with:
 	otherwise if the red blower is not frozen:
 		say "The blower looks just fine as it is. No need to defrost it now."
 		instead;
+	otherwise if the player does not have defrosting can:
+		say "You seem to be missing tools for defrosting."
+		instead;
 
-Carry out defrosting it with:
+Carry out defrosting it:
 	now the red blower is thawed.
 
-Report defrosting it with:
+Report defrosting it:
 	say "You apply defrosting agent liberally and the frost disappears."
 
 Blowing it with is an action applying to two things. Understand "Blow [something] with [something]" as blowing it with.
@@ -101,10 +104,11 @@ Carry out blowing it with:
 	now the snow is blowed.
 
 Report blowing it with:
-	say "The blower belches out some black smoke and starts hurling snow in a long arc. In no time the yard has been cleaned."
+	say "The blower belches out some black smoke and starts hurling snow in a long arc. All the birds within the hearing distance take of and move to somewhere more quiet. In no time the yard has been cleaned."
 
-After blowing snow with blower:
-	end the story saying "Finally, the yard is clean. At least until the next time it snows."
+Every turn:
+	if snow is blowed:
+		end the story saying "Finally, the yard is clean. At least until the next time it snows."
 
 Back Yard is a room. It is southeast from Front Yard. The description is "Back yard is even more full of snow than front yard. A small shed can be seen east from here."
 
