@@ -12,6 +12,15 @@ some pantries are scenery in kitchen. The description is "Multiple pantries cont
 
 Living Room is a room. It is east from Kitchen. The description is "A cozy living room with fire place and arm chair in front of it. A bookshelf is against the wall."
 
+fire place is scenery in Living Room. The description is "Small fire place has some hot embers in it that radiate light and warmth."
+
+hot embers are scenery in Living Room. The description is "Embers look too hot to touch. Better be careful around them."
+
+Instead of taking hot embers:
+	say "I rather not burn myself with those."
+
+arm chair is open enterable scenery container in Living room. The description is "Old, worn and very comfortable arm chair lies in front of the fire place. This is your favourite place in the house."
+
 Vestibule is a room. It is south from Kitchen. The description is "A small room, littered with shoes, jackets and other garments. A door in west leads outside."
 
 some garments are scenery in the Vestibule. Understand "shoe", "shoes", "jacket", "jackets" as the garments. The description is "As you're dressed up warmly, you aren't interested in extra clothing." 
