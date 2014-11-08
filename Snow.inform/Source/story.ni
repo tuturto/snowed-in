@@ -10,9 +10,9 @@ Vestibule is a room. It is south from Kitchen. "A small room, littered with shoe
 
 Wooden door is a door. It is scenery. It is west of Vestibule and east of yard. The description is "Sturdy oaken door has seen many seasons. The paint is worn, but the door itself is still solid and keeps the frost out."
 
-Yard is a room. "Tiny yard, completely covered in snow. White trees around the yard sparkle in frosty winter weather. To east is door that leads inside the house."
+Yard is a room. "Tiny yard, completely covered in snow. White trees around the yard sparkle in frosty winter weather. To east is door that leads inside the house. Your trusty snow blower stands here."
 
-Red Blower is in yard.
+Red Blower is in yard. It is scenery.
 
 White trees are in yard. They are scenery. The description is "Trees are covered with frosty snow and sparkle beautifully when rays of sun hit them."
 
@@ -28,7 +28,7 @@ Check blowing it with:
 	if the second noun is not the Red Blower:
 		say "[The second noun] can't be used to blow things."
 		instead;
-	otherwise if the player does not carry the Red Blower:
+	otherwise if the Red Blower is not enclosed by the location:
 		say "If only you had the snow blower."
 		instead;
 	otherwise if the noun is not the Snow:
