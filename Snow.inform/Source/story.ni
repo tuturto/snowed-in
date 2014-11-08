@@ -10,10 +10,26 @@ Wooden door is a door. It is scenery. It is west of Vestibule and east of yard. 
 
 Yard is a room. "Tiny yard, completely covered in snow. White trees around the yard sparkle in frosty winter weather. To east is door that leads inside the house."
 
+Red Blower is in yard.
+
 White trees are in yard. They are scenery. "Trees are covered with frosty snow and sparkle beautifully when rays of sun hit them."
 
-Thick snow is in yard. It is scenery. "Thick snow covers the yard and blocks access to the road."
+Snow is in yard. It is scenery. "Thick snow covers the yard and blocks access to the road."
 
-Before taking Thick Snow:
+Before taking Snow:
 	say "No way I'm stuffing all that into my pockets.";
 	stop the action.
+
+Blowing it with is an action applying to two things. Understand "Blow [something] with [something]" as blowing it with.
+
+Check blowing it with:
+	if the second noun is not the Red Blower:
+		say "[The second noun] can't be used to blow things." instead;
+	otherwise if the player does not carry the Red Blower:
+		say "If you only had a snow blower." instead.
+
+Carry out blowing it with:
+	say "You blow some snow."
+
+Report blowing it with:
+	say "Sweet."
