@@ -41,9 +41,8 @@ White trees are scenery in Front Yard. The description is "Trees are covered wit
 
 Snow is scenery in Front Yard. The snow can be blowed or unblowed. The snow is unblowed. The description is "Thick snow covers the yard and blocks access to the road."
 
-Before taking Snow:
-	say "No way I'm stuffing all that into my pockets.";
-	stop the action.
+Instead of taking Snow:
+	say "No way I'm stuffing all that into my pockets."
 
 Instead of tying the spark plug to the red blower:
 	if the spark plug is part of the red blower:
