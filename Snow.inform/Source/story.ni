@@ -14,7 +14,7 @@ Wooden door is a door. It is scenery. It is west of Vestibule and east of Front 
 
 Front yard is a room. "Tiny yard, completely covered in snow. White trees around the yard sparkle in frosty winter weather. To east is door that leads inside the house. Your trusty snow blower stands here."
 
-red blower is in yard. It is scenery. The description is "Red and black, somewhat rusty and very much oily snow blower that belonged to your grand father."
+red blower is in yard. It is scenery. The description is "Red and black, somewhat rusty and very much oily snow blower that belonged to your grand father. [if the spark plug is not part of the red blower]It seems to be missing a spark plug.[otherwise]It has a brand new spark plug and all the wiring has been connected.[end if]"
 
 White trees are in yard. They are scenery. The description is "Trees are covered with frosty snow and sparkle beautifully when rays of sun hit them."
 
