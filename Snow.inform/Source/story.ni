@@ -53,6 +53,5 @@ Carry out blowing it with:
 Report blowing it with:
 	say "The blower belches out some black smoke and starts hurling snow in a long arc. In no time the yard has been cleaned."
 
-Every turn:
-	if the snow is blowed:
-		end the story saying "Finally, the yard is clean. At least until the next time it snows."
+After blowing snow with blower:
+	end the story saying "Finally, the yard is clean. At least until the next time it snows."
