@@ -12,9 +12,9 @@ Yard is a room. "Tiny yard, completely covered in snow. White trees around the y
 
 Red Blower is in yard.
 
-White trees are in yard. They are scenery. "Trees are covered with frosty snow and sparkle beautifully when rays of sun hit them."
+White trees are in yard. They are scenery. The description is "Trees are covered with frosty snow and sparkle beautifully when rays of sun hit them."
 
-Snow is in yard. It is scenery. "Thick snow covers the yard and blocks access to the road."
+Snow is in yard. It is scenery. The snow can be blowed or unblowed. The snow is unblowed. The description is "Thick snow covers the yard and blocks access to the road."
 
 Before taking Snow:
 	say "No way I'm stuffing all that into my pockets.";
@@ -24,12 +24,17 @@ Blowing it with is an action applying to two things. Understand "Blow [something
 
 Check blowing it with:
 	if the second noun is not the Red Blower:
-		say "[The second noun] can't be used to blow things." instead;
+		say "[The second noun] can't be used to blow things."
+		instead;
 	otherwise if the player does not carry the Red Blower:
-		say "If you only had a snow blower." instead.
+		say "If only you had the snow blower."
+		instead;
+	otherwise if the noun is not the Snow:
+		say "You consider blowing [The noun] just a little bit, but decide against it."
+		instead.
 
 Carry out blowing it with:
-	say "You blow some snow."
+	now the snow is blowed.
 
 Report blowing it with:
-	say "Sweet."
+	say "The blower belches out some black smoke and start hurling snow in a long arc. In no time the yard has been cleaned."
