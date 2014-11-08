@@ -21,11 +21,19 @@ Instead of taking hot embers:
 
 arm chair is open enterable scenery container in Living room. The description is "Old, worn and very comfortable arm chair lies in front of the fire place. This is your favourite place in the house."
 
+defrosting can is a thing. defrosting can can be found. The defrosting can is not found. The description is "This small can of defrosting agent can lubricate and defrost even the most stuck objects. Never leave home without it."
+
 old bookshelf is a scenery supporter in living room. The description is "Old bookshelf has some books in it."
 
 some books is scenery in Living Room. The description is "These old tomes have kept you company during the evenings."
 
-defrosting can is in living room. The description is "This small can of defrosting agent can lubricate and defrost even the most stuck objects. Never leave home without it."
+Instead of examining old bookshelf:
+	if defrosting can has been found:
+		say "Old bookshelf has some books in it.";
+	otherwise:
+		now defrosting can has been found;
+		now defrosting can is in bookshelf;
+		say "You discover a can of defrosting agent behind one of the books."
 
 Vestibule is a room. It is south from Kitchen. The description is "A small room, littered with shoes, jackets and other garments. A door in west leads outside."
 
