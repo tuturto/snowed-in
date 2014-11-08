@@ -20,7 +20,7 @@ Wooden door is a door. It is scenery. It is west of Vestibule and east of Front 
 
 Front Yard is a room. The description is "Tiny yard, completely covered in snow. White trees around the yard sparkle in frosty winter weather. To east is door that leads inside the house and a small path leads to south east. Your trusty snow blower stands here."
 
-red blower is in Front Yard. It is scenery. The description is "Red and black, somewhat rusty and very much oily snow blower that belonged to your grand father. [if the spark plug is not part of the red blower]It seems to be missing a spark plug.[otherwise]It has a brand new spark plug and all the wiring has been connected.[end if]"
+red blower is in Front Yard. It is scenery. The red blower can be frozen or thawed. The red blower is frozen. The description is "Red and black, somewhat rusty and very much oily snow blower that belonged to your grand father. [if the spark plug is not part of the red blower]It seems to be missing a spark plug.[otherwise]It has a brand new spark plug and all the wiring has been connected.[end if] [if the red blower is frozen]Frost covers the blower.[end if]"
 
 White trees are scenery in Front Yard. The description is "Trees are covered with frosty snow and sparkle beautifully when rays of sun hit them."
 
@@ -49,6 +49,9 @@ Check blowing it with:
 	otherwise if the noun is not the Snow:
 		say "You consider blowing [The noun] just a little bit, but decide against it."
 		instead;
+	otherwise if the red blower is frozen:
+		say "The blower is too stiff to operate properly. I think it's frozen."
+		instead;
 	otherwise if the spark plug is not part of the red blower:
 		say "You try to start the blower, but nothing happens."
 		instead;
@@ -65,5 +68,7 @@ After blowing snow with blower:
 Back Yard is a room. It is southeast from Front Yard. The description is "Back yard is even more full of snow than front yard. A small shed can be seen east from here."
 
 Small Shed is a room. It is east from Back Yard. The description is "Small shed is dimly lit and full of all kinds of junk."
+
+junk is scenery in Small Shed. The description is "All these bits, pieces and trinkets must have been important at some point, otherwise you wouldn't have stored them here. Currently however, you can't even recognize all of them."
 
 spark plug is in Small Shed. The description is "It's a standard Sparky McSpark spark plug for snow blower."
