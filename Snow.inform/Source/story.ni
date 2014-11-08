@@ -10,7 +10,7 @@ hearth is scenery in Kitchen. The description is "The hearth has been blackened 
 
 some pantries are scenery in kitchen. The description is "Multiple pantries contain your food items and tools needed to prepare them. Currently you're not interested in their contents though."
 
-Living Room is a room. It is east from Kitchen. The description is "A cozy living room with fire place and arm chair in front of it. A bookshelf is against the wall."
+Living Room is a room. It is east from Kitchen. The description is "A cozy living room with fire place and arm chair in front of it. A bookshelf is standing against the wall."
 
 fire place is scenery in Living Room. The description is "Small fire place has some hot embers in it that radiate light and warmth."
 
@@ -20,6 +20,12 @@ Instead of taking hot embers:
 	say "I rather not burn myself with those."
 
 arm chair is open enterable scenery container in Living room. The description is "Old, worn and very comfortable arm chair lies in front of the fire place. This is your favourite place in the house."
+
+old bookshelf is a scenery supporter in living room. The description is "Old bookshelf has some books in it."
+
+some books is scenery in Living Room. The description is "These old tomes have kept you company during the evenings."
+
+defrosting can is in living room. The description is "This small can of defrosting agent can lubricate and defrost even the most stuck objects. Never leave home without it."
 
 Vestibule is a room. It is south from Kitchen. The description is "A small room, littered with shoes, jackets and other garments. A door in west leads outside."
 
