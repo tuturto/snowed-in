@@ -51,6 +51,25 @@ Instead of tying the spark plug to the red blower:
 		now the spark plug is part of the red blower;
 		say "You screw in the spark plug and attach the wiring."
 
+Defrosting it with is an action applying to two things. Understand "Defrost [something] with [something]" as defrosting it with.
+
+Check defrosting it with:
+	if the noun is not the red blower:
+		say "You don't need to defrost it."
+		instead;
+	otherwise if the red blower is not enclosed by the location:
+		say "You can't do that without the blower."
+		instead;
+	otherwise if the red blower is not frozen:
+		say "The blower looks just fine as it is. No need to defrost it now."
+		instead;
+
+Carry out defrosting it with:
+	now the red blower is thawed.
+
+Report defrosting it with:
+	say "You apply defrosting agent liberally and the frost disappears."
+
 Blowing it with is an action applying to two things. Understand "Blow [something] with [something]" as blowing it with.
 
 Check blowing it with:
