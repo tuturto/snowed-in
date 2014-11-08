@@ -4,6 +4,12 @@ When play begins, say "It's winter morning and you have just woken up in your ca
 
 Kitchen is a room. "A small kitchen with a hearth, small pantries and a small table. In east you can see living room and vestibule leading outside is south from here."
 
+small table is in Kitchen. It is scenery. The description is "a century old oaken table that was made by your grand father."
+
+hearth is in Kitchen. It is scenery. The description is "The hearth has been blackened by the countless fires, but you know that appearance isn't everything."
+
+some pantries are in kitchen. They are scenery. The description is "Multiple pantries contain your food items and tools needed to prepare them. Currently you're not interested in their contents though."
+
 spark plug is in Kitchen. The description is "It's a standard Sparky McSpark spark plug for snow blower."
 
 Living Room is a room. It is east from Kitchen. "A cozy living room with fire place and arm chair in front of it. A bookshelf is against the wall."
